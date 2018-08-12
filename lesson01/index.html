@@ -11,48 +11,56 @@
     <h1>Завдання "forms": теги і їхні атрибути.</h1>
     <h2>Розкажіть трохи про себе...</h2>
         <p>Спробуйте створити аналогічну форму. Для цілей демонстрації цілком підійдуть і вигадані.</p>
-
-    <form action="#">
+    <form action="#" method="post">
         <fieldset>
             <legend><b>Коротко про себе</b></legend>
-
             <label for="name">Ім'я</label><br>
-            <input type="text" id="name" name="name" size="20"><br>
+            <input type="text" name="name" id="name" size="20"><br>
             <label for="surname">Прізвище</label><br>
-            <input type="text" id="surname" name="surname" size="20"><br>
-            <p>Стать: <input type="radio"> чоловіча<input type="radio"> жіноча<br></p>
-            <p>Вік: <input type="text" size="2"> років<br></p>
+            <input type="text" name="surname" id="surname" size="20">
+            <br>
+            <label>Стать:</label>
+            <input type="radio" name="man" id="man"><label for="man">чоловіча</label>
+            <input type="radio" name="woman" id="woman"><label for="woman">жіноча</label>
+            <br>
+            <label for="years">Вік:</label>
+            <input type="text" name="how-old" id="years" size="2"> <label>років</label>
         </fieldset>
     </form>
-
-    <form action="#">
+    <form action="#" method="post">
         <fieldset>
             <legend><b>Детальніше про себе</b></legend>
+            <input type="radio" name="sex" id="yongman" value="Хлопець"><label for="yongman">Молодий чоловік</label>
+            <input type="radio" name="sex" value="Дівчина" id="yangwoman"><label for="yangwoman">Дівчина</label>
+            <br>
+            <div class="more-details">
+                <div class="more-fields-details">
+                    <label for="born-date">Дата народження</label>
+                    <input type="text" id="born-date" size="10"><br>
+                </div>
+                <div class="more-fields-details">
+                    <label for="family-status">Сімейний стан</label>
+                    <input type="text" id="family-status" size="10"><br>
+                </div>
+                <div class="more-fields-details">
+                    <label for="social-status">Соціальний статус</label>
+                    <input type="text" id="social-status" size="10"><br>
+                <div>
+                 <div class="more-fields-details">
+                    <label for="living-location">Місцепроживання</label>
+                    <input type="text" id="living-location" size="10"><br>
+                 </div>
+            </div>
+//Виконані зміни по рефакторінгу, тільки певної частини. 00:00 13 серпня
 
-            <p>
-                <input type="radio" name="sex" value="Хлопець"> Молодий чоловік<br>
-                <input type="radio" name="sex" value="Дівчина"/> Дівчина<br>
-            </p>
-
-            <label for="born-date">Дата народження</label>
-            <input type="text" id="born-date" size="10"><br>
-            <label for="family-status">Сімейний стан</label>
-            <input type="text" id="family-status" size="10"><br>
-            <label for="social-status">Соціальний статус</label>
-            <input type="text" id="social-status" size="10"><br>
-            <label for="living-location">Місцепроживання</label>
-            <input type="text" id="living-location" size="10"><br>
-            
-            
             <h4>Що ви зазвичай робите на вихідних:</h4>
-            <input type="checkbox" name="spice"> Сон<br>
-            <input type="checkbox" name="spice"> Гуляю з друзями<br>
-            <input type="checkbox" name="spice"> Ходжу на риболовлю<br>
-            <input type="checkbox" name="spice"> Граю в комп'ютерні ігри<br>
-            
-            
+            <input type="checkbox" name="spice" id="sleep"><label for="sleep">Сон</label><br>
+            <input type="checkbox" name="spice" id="walkwithfriends"><label for="walkwithfriends">Гуляю з друзями</label><br>
+            <input type="checkbox" name="spice" id="gotowork"><label for="gotowork">Ходжу на риболовлю</label><br>
+            <input type="checkbox" name="spice" id="playcomputergames"><label for="playcomputergames">Граю в комп'ютерні ігри</label><br>
+
             <h4>Розкажіть про форми в книзі присвячені HTML:</h4>
-            <select name="characters" id="book">
+            <select name="characters" id="book" title="book-select">
                 <option value="text">Lorem, ipsum.</option>
                 <option value="text">Lorem, ipsum dolor.</option>
                 <option value="text">Lorem, ipsum dolor.</option>
@@ -102,7 +110,7 @@
             </p>
         </fieldset>
     </form>
-
+        <br>
     <form action="#">
         <div>
             <button type="submit">Відправити</button>

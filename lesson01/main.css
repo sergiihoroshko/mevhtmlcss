@@ -1,3 +1,5 @@
 fieldset {
     background-color: bisque;
+    width: 650px;
+    box-sizing: border-box;
 }
