@@ -19,15 +19,19 @@
             <label for="surname">Прізвище</label><br>
             <input type="text" name="surname" id="surname" size="20">
             <br>
-            <label>Стать:</label>
-            <input type="radio" name="man" id="man"><label for="man">чоловіча</label>
-            <input type="radio" name="woman" id="woman"><label for="woman">жіноча</label>
+            <div class="form-group">
+                <div class="title">
+                    Стать:
+                </div>
+
+                <input type="radio" name="gender" id="man"><label for="man">чоловіча</label>
+                <input type="radio" name="gender" id="woman"><label for="woman">жіноча</label>
+            </div>
+
             <br>
             <label for="years">Вік:</label>
             <input type="text" name="how-old" id="years" size="2"> <label>років</label>
         </fieldset>
-    </form>
-    <form action="#" method="post">
         <fieldset>
             <legend><b>Детальніше про себе</b></legend>
             <input type="radio" name="sex" id="yongman" value="Хлопець"><label for="yongman">Молодий чоловік</label>
@@ -85,10 +89,7 @@
                 <option value="text">Lorem ipsum dolor sit.</option>
             </select>
         </fieldset>
-    </form>
 
-
-    <form action="#">
         <fieldset>
             <legend><b>По закінчунню</b></legend>
             <input type="text" size="30" placeholder="Це поле було введене до Вас">
@@ -109,9 +110,7 @@
                 <input type="radio" name="listq" value="yes"/> Складне<br>
             </p>
         </fieldset>
-    </form>
         <br>
-    <form action="#">
         <div>
             <button type="submit">Відправити</button>
         </div>
