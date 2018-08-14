@@ -1,0 +1,39 @@
+.geek1 {
+    border: 1px solid black;
+    border-spacing: 2px;
+    border-radius: 0px;
+    width: 1000px;
+    margin: auto;
+}
+.geek1 th {
+    border: 1px solid black;
+}
+.geek1 td {
+    border: 1px solid black;
+}
+.geek2 {
+    border: 1px solid black;
+    border-spacing: 2px;
+    border-radius: 0px;
+    width: 800px;
+    margin: auto;
+}
+.geek2 th {
+    border: 1px solid black;
+}
+.geek2 td {
+    border: 1px solid black;
+}
+.geek3 {
+    border: 2px solid black;
+    border-spacing: 1px;
+    border-radius: 0px;
+    width: 800px;
+    margin: auto;
+}
+.geek3 th {
+    border: 1px solid black;
+}
+.geek3 td {
+    border: 1px solid black;
+}
