@@ -11,7 +11,7 @@
     <h1>Завдання "forms": теги і їхні атрибути.</h1>
     <h2>Розкажіть трохи про себе...</h2>
         <p>Спробуйте створити аналогічну форму. Для цілей демонстрації цілком підійдуть і вигадані.</p>
-    <form action="#" method="post">
+    <form action="#">
         <fieldset>
             <legend><b>Коротко про себе</b></legend>
             <label for="name">Ім'я</label><br>
@@ -32,8 +32,6 @@
             <label for="years">Вік:</label>
             <input type="text" name="how-old" id="years" size="2"> <label>років</label>
         </fieldset>
-        <fieldset>
-            <legend><b>Детальніше про себе</b></legend>
             <input type="radio" name="sex" id="yongman" value="Хлопець"><label for="yongman">Молодий чоловік</label>
             <input type="radio" name="sex" value="Дівчина" id="yangwoman"><label for="yangwoman">Дівчина</label>
             <br>
@@ -49,14 +47,13 @@
                 <div class="more-fields-details">
                     <label for="social-status">Соціальний статус</label>
                     <input type="text" id="social-status" size="10"><br>
-                <div>
+                </div>
                  <div class="more-fields-details">
                     <label for="living-location">Місцепроживання</label>
                     <input type="text" id="living-location" size="10"><br>
                  </div>
             </div>
 <!--Виконані зміни по рефакторінгу, тільки певної частини. 00:00 13 серпня-->
-
             <h4>Що ви зазвичай робите на вихідних:</h4>
             <input type="checkbox" name="spice" id="sleep"><label for="sleep">Сон</label><br>
             <input type="checkbox" name="spice" id="walkwithfriends"><label for="walkwithfriends">Гуляю з друзями</label><br>
@@ -70,15 +67,13 @@
                 <option value="text">Lorem, ipsum dolor.</option>
                 <option value="text">Lorem ipsum dolor sit.</option>
             </select>
-            
-            
+
             <h4>Скільки книг ви прочитали за своє життя?</h4>
             <input type="checkbox" name="spice"> 0-10<br>
             <input type="checkbox" name="spice"> 11-20<br>
             <input type="checkbox" name="spice"> 21-50<br>
             <input type="checkbox" name="spice"> 50+<br>
-            
-            
+
             <p><b>Ваші коментарі</b><br>
                 <textarea name="comments" id="textarea" cols="60" rows="10"></textarea>
             </p>
@@ -88,10 +83,7 @@
                 <option value="text">Lorem, ipsum dolor.</option>
                 <option value="text">Lorem ipsum dolor sit.</option>
             </select>
-        </fieldset>
 
-        <fieldset>
-            <legend><b>По закінчунню</b></legend>
             <input type="text" size="30" placeholder="Це поле було введене до Вас">
             <p><b>Email:</b><br>
                 <input type="email">
@@ -109,7 +101,6 @@
                 <input type="radio" name="listq" value="soso"/> Так собі<br>
                 <input type="radio" name="listq" value="yes"/> Складне<br>
             </p>
-        </fieldset>
         <br>
         <div>
             <button type="submit">Відправити</button>
