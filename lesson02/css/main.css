@@ -51,15 +51,13 @@ table {
     overflow: hidden;
 }
 /*wrapper*/
-.bg-main-header {
-    background: #3498db;
-}
 .container {
     width: 1170px;
     margin: 0 auto;
 }
 /*header*/
 .header {
+    background: #3498db;
     padding: 55px 0;
     overflow: hidden;
 }
