@@ -1,2 +1,5 @@
 .idea
 .DS_Store
+/lesson02/node_modules
+/lesson02/package-lock.json
+/lesson02/gulpfile.js
