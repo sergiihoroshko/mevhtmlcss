@@ -10,4 +10,4 @@ gulp.task("reload-css", function() {
 gulp.task("default", function() {
     livereload.listen();
     gulp.watch('./styles/*.css', ['reload-css']);
-});﻿
+});
