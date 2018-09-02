@@ -1,59 +1,16 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-   CSS reset
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 .overflow {
     overflow: hidden;
 }
-/*wrapper*/
+
+/*--------------------wrapper--------------------*/
+
 .container {
     width: 1170px;
     margin: 0 auto;
 }
-/*header*/
+
+/*--------------------header--------------------*/
+
 .header {
     background: #3498db;
     padding: 55px 0;
@@ -69,7 +26,7 @@ table {
     float: right;
     width: 40px;
     height: 29px;
-    background: url("../img/menu.png") no-repeat;
+    background: url("../images/aion-menu.png") no-repeat;
     /*https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent*/
     text-indent: -9999px;
     border: 0;
@@ -90,7 +47,9 @@ table {
     font-size: 60px;
     margin-bottom: 178px;
 }
-/*content*/
+
+/*--------------------content--------------------*/
+
 .bg-circle {
     background: #ecf0f1;
     overflow: hidden;
@@ -116,7 +75,7 @@ table {
     width: 35px;
     height: 35px;
     margin: 10px auto;
-    background: url("../img/xpoint.png") no-repeat;
+    background: url("../images/aion-xpoint.png") no-repeat;
 }
 .between-box p {
     color: #2c3e50;
